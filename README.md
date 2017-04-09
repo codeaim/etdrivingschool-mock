@@ -2,7 +2,7 @@
 
 ### Introduction
 
-HTML, CSS & Javascript mock up of etdrivingschool.co.uk
+*etdivingschool-mock** is a HTML, CSS & Javascript mock up of etdrivingschool.co.uk
 
 #### Pages
 * index - Intro page introducing the service and website

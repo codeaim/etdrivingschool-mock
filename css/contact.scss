@@ -1,0 +1,127 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em 1em 2em;
+
+  .contact-title {
+    margin: 1em 0 2em 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    font-weight: normal;
+
+    span {
+      position: relative;
+      top: -0.5em;
+      text-transform: uppercase;
+      padding: 1em;
+      font-size: 1.25em;
+      background-color: #fff;
+      border-left: 2em solid #fff;
+      border-right: 2em solid #fff;
+    }
+  }
+
+  .contact-subtitle {
+    color: #9C0008;
+    text-transform: capitalize;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contact-message {
+    padding-bottom: 0.5em;
+    color: #6e6e6e;
+  }
+
+  form {
+    padding-bottom: 1em;
+
+    label {
+      display: block;
+      text-transform: uppercase;
+      color: #868686;
+    }
+
+    input, textarea {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 1em;
+      color: #ffffff;
+      border: none;
+      background-color: #9C0008;
+
+      &:hover {
+        color: #868686;
+        background-color: #f0f0f0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.contact-details {
+  color: #868686;
+  text-align: center;
+  padding-bottom: 1em;
+
+  div {
+    padding-bottom: 1em;
+  }
+  a {
+    color: #9C0008;
+    text-decoration: none;
+  }
+}
+
+.get-in-touch {
+  text-align: center;
+  padding-bottom: 1em;
+  color: #868686;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact-us {
+    .contact-section {
+      flex-direction: row;
+    }
+
+    .contact-subtitle {
+      text-align: left;
+    }
+
+    .contact-left {
+      flex: 3;
+    }
+
+    .contact-right {
+      flex: 2;
+      padding-left: 4em;
+
+      .contact-details {
+        text-align: left;
+
+        i {
+          padding-right: 0.5em;
+        }
+      }
+
+      .get-in-touch {
+        text-align: left;
+      }
+    }
+  }
+}

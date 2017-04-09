@@ -1,0 +1,27 @@
+.about {
+  padding: 2em;
+
+  .about-title {
+    margin: 1em 0 2em 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    font-weight: normal;
+
+    span {
+      position: relative;
+      top: -0.5em;
+      text-transform: uppercase;
+      padding: 1em;
+      font-size: 1.25em;
+      background-color: #fff;
+      border-left: 2em solid #fff;
+      border-right: 2em solid #fff;
+    }
+  }
+
+  .about-detail {
+    line-height: 1.5;
+    color: #888;
+  }
+}

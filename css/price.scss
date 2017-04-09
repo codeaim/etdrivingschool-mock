@@ -1,0 +1,135 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em 1em 2em;
+
+  .price-title {
+    margin: 1em 0 2em 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    font-weight: normal;
+
+    span {
+      position: relative;
+      top: -0.5em;
+      text-transform: uppercase;
+      padding: 1em;
+      font-size: 1.25em;
+      background-color: #fff;
+      border-left: 2em solid #fff;
+      border-right: 2em solid #fff;
+    }
+  }
+
+  .price-secondary-title {
+    color: #9C0008;
+    text-transform: capitalize;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .price-group {
+    display: flex;
+    flex-direction: column;
+
+    .price-top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-left {
+      margin-right: 1em;
+    }
+
+    .price-right {
+      margin-left: 1em;
+    }
+
+    .price {
+      text-align: center;
+      background-color: #f0f0f0;
+      border-bottom: 2px solid #9C0008;
+      margin-bottom: 2em;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .price-icon {
+        font-size: 3em;
+        color: #5d5d5d;
+        padding-bottom: 0.25em;
+      }
+
+      .price-intro {
+        font-size: 1.25em;
+        text-transform: capitalize;
+        color: #999;
+        padding-bottom: 1em;
+
+      }
+
+      .price-text {
+        font-size: 1em;
+        text-transform: uppercase;
+        color: #5d5d5d;
+      }
+
+      .price-action {
+        margin-top: 2em;
+        a {
+          background-color: #9C0008;
+          color: #ffffff;
+          text-decoration: none;
+          padding: 1em;
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .prices {
+    .price-group {
+      .price-top {
+        flex-direction: row;
+      }
+      .price-bottom {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .prices {
+    .price-group {
+      flex-direction: row;
+
+      .price-top {
+        display: flex;
+        flex: 1;
+        margin-right: 1em;
+      }
+
+      .price-bottom {
+        display: flex;
+        flex: 1;
+        margin-left: 1em;
+      }
+
+      .price-group-bottom {
+        flex: 2;
+      }
+    }
+  }
+}
